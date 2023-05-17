@@ -96,7 +96,7 @@ class ActiveShapeModel(GradientDescentCLMAlgorithm):
 
         # Build grid associated to size of the search space
         self.half_search_shape = np.round(
-            np.asarray(self.expert_ensemble.search_shape) / 2).astype(np.int64)
+            np.asarray(self.expert_ensemble.search_shape) / 2).astype(int64)
         self.search_grid = self.search_grid[None, None]
 
         # Compute Gaussian-KDE grid

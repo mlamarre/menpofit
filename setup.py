@@ -20,7 +20,7 @@ version, cmdclass = get_version_and_cmdclass("menpofit")
 
 setup(
     name="menpofit",
-    version=version,
+    version="0.8.0",
     cmdclass=cmdclass,
     description="Menpo's image feature point localisation (AAMs, SDMs, CLMs)",
     author="The Menpo Development Team",

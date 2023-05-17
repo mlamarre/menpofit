@@ -12,7 +12,7 @@ def pointcloud_to_dlib_parts(pcloud):
 
 
 def dlib_full_object_detection_to_pointcloud(full_object_detection):
-    return PointCloud(np.vstack(all_parts(full_object_detection)), copy=False)
+    return PointCloud(np.vstack(list(all_parts(full_object_detection))), copy=False)
 
 
 def dlib_rect_to_bounding_box(rect):
